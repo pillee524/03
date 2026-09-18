@@ -1,15 +1,15 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 
 int main(void)
 {
-    char FirstAlphabet, SecondAlphabet;
 
-    printf("Enter an alphabet : ");
-    scanf("%c", &FirstAlphabet);
+    float a, b;
+    printf("분자를 입력하세요 : ");
+    scanf("%f", &a);
+    printf("분모를 입력하세요 : ");
+    scanf("%f", &b);
 
-    SecondAlphabet = FirstAlphabet + 1;
+    printf("나누기의 결과는 %f\n입니다.", (float)a/b);
 
-    printf("The next alphabet of %c (%d) is %c (%d)\n", FirstAlphabet, FirstAlphabet, SecondAlphabet, SecondAlphabet);
-    return 0;  
+    return 0;
 }
-
