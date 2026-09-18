@@ -2,14 +2,14 @@
 
 int main(void)
 {
-    char c;
-    int i;
-    
-    printf("input a number :");
-    scanf("%c", &c);
-    
-    i = c-'0';
-    printf("The input number is %i\n", i);
+    char FirstAlphabet, SecondAlphabet;
 
-    return 0;
+    printf("Enter an alphabet : ");
+    scanf("%c", &FirstAlphabet);
+
+    SecondAlphabet = FirstAlphabet + 1;
+
+    printf("The next alphabet of %c (%d) is %c (%d)\n", FirstAlphabet, FirstAlphabet, SecondAlphabet, SecondAlphabet);
+    return 0;  
 }
+
